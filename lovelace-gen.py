@@ -71,7 +71,7 @@ def main():
         sys.exit(3)
 
     try:
-        with open(outp, 'w') as fp:
+        with open(outp, 'w', encoding="utf-8") as fp:
             fp.write(GENERATOR_MESSAGE)
             yaml = YAML()
             yaml.dump(data, fp)
